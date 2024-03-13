@@ -3,9 +3,22 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'session',
+    path: '',
     loadChildren: () =>
-      import(`./modules/session/session.module`).then((m) => m.SessionModule),
+      import(`./modules/session/session-routing.module`).then(
+        (m) => m.SessionRoutingModule
+      ),
+  },
+  {
+    path:'dashboard',
+    loadChildren:()=>import(`./modules/dashboard/dashboard.module`).then((m)=>m.DashboardModule)
+  },
+  {
+    path: 'task-manager',
+    loadChildren: () =>
+      import(`./modules/task-manager/task-manager-routing.module`).then(
+        (m) => m.TaskManagerRoutingModule
+      ),
   },
   {
     path: '',

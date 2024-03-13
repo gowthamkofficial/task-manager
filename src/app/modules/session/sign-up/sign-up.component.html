@@ -1,1 +1,78 @@
-<p>sign-up works!</p>
+<div class="container">
+
+    <div class="content">
+
+        <mat-card class="card">
+
+            <div class="heading">
+                <span>USER REGISTER</span>
+            </div>
+
+            <div class="form">
+
+
+                <div class="d-space">
+
+
+                    <mat-form-field appearance="outline" class="form-control ">
+                        <mat-label>Name</mat-label>
+                        <input required matInput>
+                    </mat-form-field>
+
+                    <div class="form-control">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Date Of Birth</mat-label>
+                            <input readonly="true" (click)="picker.open()" [max]="today" matInput
+                                [matDatepicker]="picker">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+
+                    </div>
+
+                </div>
+
+                <div class="d-space">
+                    <mat-form-field appearance="outline" class="form-control ">
+                        <mat-label>Email Address</mat-label>
+                        <input required matInput>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="form-control">
+                        <mat-label>Mobile Number</mat-label>
+                        <input required matInput>
+                    </mat-form-field>
+                </div>
+
+                <div class="d-space">
+                    <mat-form-field appearance="outline" class="form-control ">
+                        <mat-label>Sex</mat-label>
+                        <mat-select required>
+                            <mat-option *ngFor="let data of ['male','female','others']"
+                                [value]="data">{{data|titlecase}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="form-control">
+                        <mat-label>Password</mat-label>
+                        <input required matInput>
+                    </mat-form-field>
+                </div>
+
+                <div class="d-flex btn">
+                    <button mat-raised-button color="primary">Register</button>
+                </div>
+
+                <div class="register-link">
+                    <a routerLink="/"> <span>Already a user</span></a>
+                </div>
+
+            </div>
+
+
+        </mat-card>
+
+    </div>
+
+
+</div>
