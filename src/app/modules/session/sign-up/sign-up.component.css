@@ -14,8 +14,8 @@
 }
 
 .card {
-  width: 30%;
-  height: 70%;
+  width: 36%;
+  /* height: 80%; */
   border-radius: 20px;
 }
 
@@ -33,7 +33,7 @@
 
 .form-control {
   padding-top: 10px;
-  width: 75%;
+  width: 45%;
 }
 
 .btn button {
@@ -51,4 +51,5 @@
     text-decoration: underline;
     cursor: pointer;
   }
+  padding-bottom: 20px;
 }
