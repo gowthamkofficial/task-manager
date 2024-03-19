@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+}
+
+.content{
+    padding: 20px 20px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

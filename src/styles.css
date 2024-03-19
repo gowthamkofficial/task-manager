@@ -15,9 +15,13 @@ body {
   align-items: center;
 }
 
-.d-space{
-    display: flex;
-    justify-content: space-around;
+.display-flex {
+  display: flex;
+}
+
+.d-space {
+  display: flex;
+  justify-content: space-around;
 }
 
 .pl-10 {
@@ -83,3 +87,59 @@ body {
 .mb-5 {
   margin-bottom: 5px;
 }
+
+.active {
+  text-decoration: underline white;
+}
+
+.w-100 {
+  width: 100%;
+}
+.w-90 {
+  width: 90%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-70 {
+  width: 70%;
+}
+.w-60 {
+  width: 60%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.d-block {
+  display: block;
+}
+
+/* padding */
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.p-50 {
+  padding: 50px;
+}
+

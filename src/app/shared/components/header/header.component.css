@@ -1,0 +1,25 @@
+.tool-bar {
+  background-color: #e1e1e1;
+  background-image: linear-gradient(315deg, #ffffff 0%, #274060 74%);
+}
+
+.links {
+  span {
+    padding-left: 20px;
+    /* text-transform: uppercase; */
+    color: white;
+  }
+}
+
+.blink-soft {
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
