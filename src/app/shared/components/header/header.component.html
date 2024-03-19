@@ -1,0 +1,27 @@
+
+<mat-toolbar class="tool-bar">
+
+
+
+
+        <div class="links pl-10 left">
+
+            <span routerLink="/dashboard" routerLinkActive="active">Dashboard</span>
+
+            <span routerLink="/task-manager" routerLinkActive="active">My Tasks</span>
+        </div>
+        <span class="example-spacer"></span>
+        <div class="right">
+            <button mat-mini-fab matTooltip="Gowtham K" [matMenuTriggerFor]="menu" color="primary">
+                <mat-icon>perm_identity</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>power_settings_new</mat-icon>
+                    <span routerLink="/">Logout</span>
+                </button>
+            </mat-menu>
+        </div>
+ 
+
+</mat-toolbar>

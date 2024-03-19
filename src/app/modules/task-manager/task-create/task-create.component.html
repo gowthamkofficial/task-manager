@@ -1,1 +1,95 @@
-<p>task-create works!</p>
+<div class="container">
+
+    <div class="content">
+
+
+        <div class="top-section pb-10">
+            <h2>Create Task</h2>
+            <button mat-raised-button color="primary" routerLink="/task-manager">Task List</button>
+        </div>
+
+        <mat-divider></mat-divider>
+
+
+        <div class="form">
+
+            <h2 style="font-weight: 500;">Task Details</h2>
+
+            <div class="display-flex">
+                <mat-form-field appearance="outline" class="form-control w-30 ">
+                    <mat-label>Name</mat-label>
+                    <input required matInput placeholder="Enter Task Name">
+                </mat-form-field>
+            </div>
+
+            <div class="">
+
+                <mat-form-field appearance="outline" class="form-control w-30  ">
+                    <mat-label>Description</mat-label>
+                    <textarea required matInput placeholder="Enter Task Description"></textarea>
+                </mat-form-field>
+            </div>
+
+            <mat-divider></mat-divider>
+
+            <div class="pt-10 pb-10">
+
+                <h2 style="font-weight: 500;">Subtasks Details</h2>
+
+
+
+
+                <ng-container *ngFor="let data of [1,1,1,]">
+                    <div class="subtasks">
+
+
+
+
+                        <mat-form-field appearance="outline" class="form-control w-50 ">
+                            <mat-label>Subtask</mat-label>
+                            <input required matInput placeholder="Enter Task">
+                        </mat-form-field>
+
+
+                        <mat-form-field appearance="outline" class="form-control w-30 pl-10 ">
+                            <mat-label>Priority</mat-label>
+                            <mat-select required>
+                                <mat-option *ngFor="let data of ['high', 'moderate', 'low']"
+                                    [value]="data">{{data|titlecase}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <div class="pl-20">
+                            <button mat-icon-button color="warn">
+                                <mat-icon>delete</mat-icon>
+                            </button>
+                        </div>
+
+                    </div>
+                </ng-container>
+
+                <div class="add-button">
+                    <button mat-raised-button color="primary">Add Task</button>
+                </div>
+
+
+            </div>
+
+
+            <mat-divider></mat-divider>
+
+
+        </div>
+
+
+        <div class="add-button">
+            <button mat-raised-button color="primary" class="">Submit</button>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>

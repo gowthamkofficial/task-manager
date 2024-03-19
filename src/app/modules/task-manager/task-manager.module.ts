@@ -6,6 +6,7 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { TaskCreateComponent } from './task-create/task-create.component';
 import { TaskViewComponent } from './task-view/task-view.component';
 import { TaskUpdateComponent } from './task-update/task-update.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { TaskUpdateComponent } from './task-update/task-update.component';
   ],
   imports: [
     CommonModule,
-    TaskManagerRoutingModule
+    TaskManagerRoutingModule,
+    SharedModule
   ]
 })
 export class TaskManagerModule { }

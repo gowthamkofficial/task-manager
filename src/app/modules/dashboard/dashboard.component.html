@@ -1,4 +1,83 @@
-<mat-card>
-fgdsgfgfg
+<div class="container">
 
-</mat-card>
+    <div class="content">
+
+
+        
+
+
+
+        <div class="dash-content">
+
+
+            <div class="top-card pb-10">
+                <div class="col-md-4 col-xl-3 ">
+                    <div class="card bg-c-blue order-card">
+                        <div class="card-block">
+                            <h6 class="m-b-20">Total Tasks</h6>
+                            <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xl-3 pl-10">
+                    <div class="card bg-c-green order-card">
+                        <div class="card-block">
+                            <h6 class="m-b-20">Completed Tasks</h6>
+                            <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xl-3 pl-10">
+                    <div class="card bg-c-yellow order-card">
+                        <div class="card-block">
+                            <h6 class="m-b-20">Pending Tasks</h6>
+                            <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>486</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="dash-chart">
+
+
+                <mat-card>
+                    <div class="pie-chart">
+
+                        <apx-chart [series]="pieChart.series" [chart]="pieChart.chart" [labels]="pieChart.labels"
+                            [responsive]="pieChart.responsive"></apx-chart>
+                    </div>
+
+                </mat-card>
+
+
+
+                <mat-card>
+                    <div class="bar-chart">
+
+                        <apx-chart [series]="lineChart.series" [chart]="lineChart.chart"
+                            [xaxis]="lineChart.xaxis" [dataLabels]="lineChart.dataLabels"
+                            [grid]="lineChart.grid" [stroke]="lineChart.stroke"
+                            [title]="lineChart.title"></apx-chart>
+                    </div>
+
+                </mat-card>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</div>
