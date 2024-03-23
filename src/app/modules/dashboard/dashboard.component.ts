@@ -19,6 +19,7 @@ export type PieChartOptions = {
   chart: ApexChart;
   responsive: ApexResponsive[];
   labels: any;
+  title: ApexTitleSubtitle;
 };
 
 export type LineChartOptions = {
@@ -42,12 +43,16 @@ export class DashboardComponent {
   public lineChart: Partial<LineChartOptions>;
   constructor() {
     this.pieChart = {
-      series: [44, 55],
+      series: [25, 55,22],
       chart: {
         width: 380,
         type: 'pie',
       },
-      labels: ['Completed', 'Pending'],
+      title: {
+        text: 'Task Details',
+        align: 'left',
+      },
+      labels: ['Completed', 'Pending','Deleted'],
       responsive: [
         {
           breakpoint: 480,
