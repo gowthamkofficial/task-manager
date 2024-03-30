@@ -35,3 +35,7 @@ export class WhiteSpaceValidator {
     return null;
   }
 }
+
+export function checkNull(data) {
+  return data != null && data != undefined && data != '';
+}

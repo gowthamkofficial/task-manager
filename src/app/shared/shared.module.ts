@@ -4,6 +4,7 @@ import { AngularMaterialModule } from './angular-material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 @NgModule({
   declarations: [],
@@ -12,7 +13,13 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     AngularMaterialModule,
     HeaderComponent,
     LoaderComponent,
+    TooltipComponent,
   ],
-  exports: [AngularMaterialModule, HeaderComponent, LoaderComponent],
+  exports: [
+    AngularMaterialModule,
+    HeaderComponent,
+    LoaderComponent,
+    TooltipComponent,
+  ],
 })
 export class SharedModule {}
