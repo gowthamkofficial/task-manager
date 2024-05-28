@@ -15,8 +15,9 @@
 
 .card {
   width: 30%;
-  height: 70%;
+  padding-bottom: 40px;
   border-radius: 20px;
+  position: relative;
 }
 
 .heading {

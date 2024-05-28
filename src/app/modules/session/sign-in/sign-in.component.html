@@ -9,28 +9,46 @@
             </div>
 
             <div class="form">
+                <form [formGroup]="signInForm">
+                    <div class="d-flex">
+                        <mat-form-field appearance="outline" class="form-control">
+                            <mat-label>Username</mat-label>
+                            <input matInput formControlName="username">
 
 
-                <div class="d-flex">
-                    <mat-form-field appearance="outline" class="form-control">
-                        <mat-label>Username</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </div>
+                            <div class="" matSuffix *ngIf="form['username'].invalid&&form['username'].touched">
 
-                <div class="d-flex">
-                    <mat-form-field class="form-control" appearance="outline">
-                        <mat-label>Password</mat-label>
-                        <input matInput type="password">
-                    </mat-form-field>
-                </div>
+                                <tool-tip *ngIf="form['username'].errors?.required&&!form['username'].errors?.pattern"
+                                    message="Username is required"></tool-tip>
 
-                <div class="d-flex btn">
-                    <button routerLink="/dashboard" mat-raised-button color="primary">Login</button>
-                </div>
+                                <tool-tip *ngIf="!form['username'].errors?.required&&form['username'].errors?.pattern"
+                                    message="Kindly provide a valid username"></tool-tip>
 
+                            </div>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="d-flex">
+                        <mat-form-field class="form-control" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input matInput type="password" formControlName="password">
+
+
+                            <div class="" matSuffix *ngIf="form['password'].invalid&&form['password'].touched">
+
+                                <tool-tip *ngIf="form['password'].errors?.required&&!form['password'].errors?.pattern"
+                                    message="Password is required"></tool-tip>
+
+                            </div>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="d-flex btn">
+                        <button (click)="signIn()" mat-raised-button color="primary">Login</button>
+                    </div>
+                </form>
                 <div class="register-link">
-                   <a routerLink="/register"> <span>Register</span></a>
+                    <a routerLink="/register"> <span>Register</span></a>
                 </div>
 
             </div>

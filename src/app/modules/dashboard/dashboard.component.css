@@ -67,12 +67,10 @@
 }
 
 .pie-chart {
-  max-width: 380px;
-  margin: 35px auto;
-  padding: 0;
+  padding: 20px 40px;
 }
 
 .bar-chart {
-    padding: 0 40px;
+    padding: 20px 40px;
   }
   
