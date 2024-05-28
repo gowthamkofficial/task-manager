@@ -45,11 +45,11 @@
   padding: 0px 40px;
   display: flex;
   justify-content: flex-end;
+}
 
-  span {
-    font-weight: 500;
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-  }
+.register-link span {
+  font-weight: 500;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
