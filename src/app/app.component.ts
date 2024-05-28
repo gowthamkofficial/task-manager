@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
         console.log(event.url);
         if (
           event.url == '/' ||
-          event.url == '/register' ||
+          event.url == '/register' || 
           !checkNull(event?.url)
         ) {
           this.showHeader.next(false);

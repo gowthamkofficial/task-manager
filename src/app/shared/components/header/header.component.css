@@ -3,12 +3,10 @@
   background-image: linear-gradient(315deg, #ffffff 0%, #274060 74%);
 }
 
-.links {
-  span {
+.links span {
     padding-left: 20px;
     /* text-transform: uppercase; */
     color: white;
-  }
 }
 
 .blink-soft {

@@ -1,13 +1,22 @@
+import { FormArray, FormControl, FormGroup } from '@angular/forms';
+
 export class InvalidControl {
   controlName;
-  labelName;
+
+  groupName;
+  arrayName;
+
   errors;
-  messages;
   controlType;
-  groupError;
-  arrayError;
+
+  groupErrors;
+  arrayErrors;
+
   index;
+
   control;
-  
+
   constructor() {}
 }
+
+export type FormType = FormControl | FormGroup | FormArray;
