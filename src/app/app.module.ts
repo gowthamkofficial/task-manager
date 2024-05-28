@@ -8,7 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { SessionModule } from './modules/session/session.module';
 import { TaskManagerModule } from './modules/task-manager/task-manager.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { JwtTokenInterceptor } from './core/interceptors/jwt-token.interceptor';
 
 @NgModule({
@@ -21,6 +21,7 @@ import { JwtTokenInterceptor } from './core/interceptors/jwt-token.interceptor';
     TaskManagerModule,
     SharedModule,
     DashboardModule,
+    HttpClientModule,
   ],
   providers: [
     {

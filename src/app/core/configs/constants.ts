@@ -1,6 +1,6 @@
 import { AbstractControl, ValidationErrors } from '@angular/forms';
 
-export const APP_VARIABLES = {
+export const REGEXPRESSIONS = {
   validators: {
     image: /(.*?)\.(jpg|jpeg|png|bmp|jfif)$/,
     integer: /^-?(0|[1-9]\d*)?$/,
@@ -25,6 +25,8 @@ export const APP_VARIABLES = {
     numberOnly: '^[0-9]*$',
     Minpasswordlength: /(?=.*\d)(?=.*[0-9]).{6,}/,
     date: /^([0-2][0-9]|(3)[0-1])(\-)(((0)[0-9])|((1)[0-2]))(\-)\d{4}$/,
+    username:
+      /^(?:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}|(?:\+\d{1,3}\s*)?\d{10,12})$/,
   },
 };
 export class WhiteSpaceValidator {
